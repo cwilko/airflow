@@ -36,4 +36,3 @@ jobs:
             AIRFLOW_EXTRAS=async,celery,cncf.kubernetes,dask,docker,grpc,http,ldap,postgres,redis,statsd,virtualenv
             PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
             ADDITIONAL_RUNTIME_APT_DEPS="git"
-            ADDITIONAL_DEV_APT_DEPS="git"
