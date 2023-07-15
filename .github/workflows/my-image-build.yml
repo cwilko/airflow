@@ -34,3 +34,7 @@ jobs:
           build-args: |
             AIRFLOW_VERSION=2.6.2
             AIRFLOW_EXTRAS=async,celery,cncf.kubernetes,dask,docker,grpc,http,ldap,postgres,redis,statsd,virtualenv
+            INSTALL_MYSQL_CLIENT=false
+            INSTALL_MSSQL_CLIENT=false
+            ADDITIONAL_RUNTIME_APT_DEPS=git
+
