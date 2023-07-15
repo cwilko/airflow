@@ -23,9 +23,8 @@ jobs:
         with:
           context: .
           push: true
+          platforms: linux/arm64
           tags: ${{ github.repository }}:latest
           build-args: |
             AIRFLOW_VERSION=2.6.2
             AIRFLOW_EXTRAS=async,celery,cncf.kubernetes,dask,docker,grpc,http,ldap,postgres,redis,statsd,virtualenv
-            PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
-            PYTHON_MAJOR_MINOR_VERSION=3.9
