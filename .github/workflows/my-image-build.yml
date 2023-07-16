@@ -37,6 +37,6 @@ jobs:
             PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
             INSTALL_MYSQL_CLIENT=false
             INSTALL_MSSQL_CLIENT=false
-            ADDITIONAL_RUNTIME_APT_DEPS=git,sshpass
+            ADDITIONAL_RUNTIME_APT_DEPS=git sshpass
             TZ=Europe/London
 
