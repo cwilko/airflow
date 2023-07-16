@@ -33,9 +33,10 @@ jobs:
           tags: ${{ github.repository }}:latest
           build-args: |
             AIRFLOW_VERSION=2.6.2
-            AIRFLOW_EXTRAS=async,celery,cncf.kubernetes,dask,docker,grpc,http,ldap,postgres,redis,statsd,virtualenv
+            AIRFLOW_EXTRAS=async,cncf.kubernetes,dask,docker,grpc,http,postgres,statsd,virtualenv
             PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
             INSTALL_MYSQL_CLIENT=false
             INSTALL_MSSQL_CLIENT=false
             ADDITIONAL_RUNTIME_APT_DEPS=git
+            TZ=Europe/London
 
