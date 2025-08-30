@@ -34,7 +34,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/airflow:test-v2
           build-args: |
-            AIRFLOW_VERSION=2.8.4
+            AIRFLOW_VERSION=2.9.3
             AIRFLOW_EXTRAS=async,cncf.kubernetes,dask,docker,grpc,http,postgres,statsd,virtualenv
             PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
             INSTALL_MYSQL_CLIENT=false
