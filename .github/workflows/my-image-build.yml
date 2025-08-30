@@ -32,7 +32,7 @@ jobs:
           context: .
           push: true
           platforms: linux/arm64
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/airflow:test-v3
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/airflow:latest
           build-args: |
             AIRFLOW_VERSION=2.8.4
             AIRFLOW_EXTRAS=cncf-kubernetes,virtualenv,postgres,redis,celery
