@@ -35,7 +35,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/airflow:test-v2
           build-args: |
             AIRFLOW_VERSION=2.9.3
-            AIRFLOW_EXTRAS=cncf.kubernetes,virtualenv,postgres,redis,celery
+            AIRFLOW_EXTRAS=cncf-kubernetes,virtualenv,postgres,redis,celery
             PYTHON_BASE_IMAGE=python:3.9-slim-bullseye
             INSTALL_MYSQL_CLIENT=false
             INSTALL_MSSQL_CLIENT=false
